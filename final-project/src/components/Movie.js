@@ -12,12 +12,12 @@ const setVoteClass = (vote) => {
   }
 };
 
-const Movie = ({ title, poster_path, overview, vote_average }) => (
+const Movie = ({ title, backdrop_path, overview, vote_average, rated, runtime, genre_ids, actors }) => (
   <div className="movie">
     <img
       src={
-        poster_path
-          ? IMG_API + poster_path
+        backdrop_path
+          ? IMG_API + backdrop_path
           : "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1480&q=80chrome-extension://mhffmephdchhhbfjmdpoaldedhhdanbn/homePage.html"
       }
       alt={title}
@@ -28,7 +28,7 @@ const Movie = ({ title, poster_path, overview, vote_average }) => (
         {" "}
         {vote_average}{" "}
       </span>{" "}
-    </div>
+    </div>  
     <div className="movie-over">
       <h2> Overview: </h2> <p> {overview} </p>{" "}
     </div>{" "}
