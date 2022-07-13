@@ -91,6 +91,7 @@ header {
   transform: translateY(0%);
 }
 
+/* Vote Average */
 .tag {
   background-color: #22254b;
   border-radius: 5px;
@@ -111,9 +112,50 @@ header {
   color: red;
 }
 
-.tag2, .tag3, .tag4 {
+/* Vote Count */
+.tag2 {
   background-color: #22254b;
-  color: #373b69;
+  color: #054fbe;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/* Original Language */
+.tag3 {
+  background-color: #22254b;
+  color: #08c4dd;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/* Release Date */
+.tag4 {
+  background-color: #22254b;
+  color: #5308dd;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/* Popularity */
+.tag5 {
+  background-color: #22254b;
+  color: #b208dd;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/* Genre Id */
+.tag6 {
+  background-color: #22254b;
+  color: #ddda08;
   border-radius: 5px;
   font-weight: bold;
   padding: 0.5rem;

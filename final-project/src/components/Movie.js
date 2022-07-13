@@ -12,7 +12,7 @@ const setVoteClass = (vote) => {
   }
 };
 
-const Movie = ({ title, backdrop_path, overview, vote_average, original_language, release_date, vote_count }) => (
+const Movie = ({ title, backdrop_path, overview, vote_average, original_language, release_date, vote_count, popularity, genre_ids }) => (
   <div className="movie">
     <img
       src={
@@ -44,7 +44,17 @@ const Movie = ({ title, backdrop_path, overview, vote_average, original_language
         Release Date
         {" "}
         {release_date}{" "}
-      </span>{" "} <br /> <br />    
+      </span>{" "} <br /> <br />
+      <span className={`tag5 ${setVoteClass(popularity)}`}>
+        Popularity
+        {" "}
+        {popularity}{" "}
+      </span>{" "} <br /> <br />
+      <span className={`tag6 ${setVoteClass(genre_ids)}`}>
+        Genre Id
+        {" "}
+        {genre_ids}{" "}
+      </span>{" "} <br /> <br />        
     <div className="movie-over">
       <h2> Overview: </h2> <p> {overview} </p>{" "}
     </div>{" "}
